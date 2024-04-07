@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+/* header*/
+header {
+  background: #1B2A49;
+  color: #ffffff;
+  min-height: 150px; 
+  border-bottom: #333744 solid 5px;
+}
+
+header .container {
+  display: flex; 
+  flex-wrap: wrap; 
+  align-items: left; 
+  justify-content: flex-start; 
+  padding: 0 20px; 
+}
+
+header #branding {
+  flex-basis: 100%; 
+  display: flex;
+  justify-content: flex-start; 
+  align-items: left; 
+  margin-bottom: 20px; 
+}
+
+header #branding img {
+  margin-right: 15px; /* Margin to the right of the image */
+}
+
+header nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Remove bullets from the list */
+  width: 100%; /* Full width */
+}
+
+header nav ul li {
+  padding: 0 50px; /* Space between navigation items */
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/*header*/
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+
+header nav {
+  float: left;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+
+/* icon align with "resume"*/
+#branding{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#branding img{
+  width: 50px;
+  height: auto;
+}
+
+
+.intro {
+  background: url("webdev2.jpg") no-repeat center center/cover;
+  padding: 100px 0;
+  color: #ffffff;
+}
+
+.intro img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.intro h2 {
+  margin: 20px 0;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.skills {
+  margin: 40px 0;
+}
+
+.skills .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  text-align: center;
+}
+
+.skills .skill-item {
+  background: #f4f4f4;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.about {
+  padding: 40px 0;
+  background: #f4f4f4;
+}
+
+.about p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #333744;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+.about{
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#aboutMe{
+  font-size: 50px;
+}
+
+/* responsive layout*/
+@media only screen and (max-width: 700px) {
+  header #branding,
+  header nav,
+  header nav ul,
+  header .current a {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header .container {
+    justify-content: center; /* Center items on smaller screens */
+  }
+
+  header #branding,
+  header nav ul {
+    justify-content: center; /* Center branding and navigation items */
+  }
+
+  header nav ul {
+    flex-direction: column; /* Stack the navigation items vertically */
+    align-items: center;
+  }
+
+  header nav ul li {
+    padding: 10px 0; /* Space between stacked navigation items */
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  header li {
+    padding: 5px;
+  }
+
+  .intro h2 {
+    font-size: 2rem;
+  }
+  header {
+    padding: 20px 0; 
+    min-height: 60px; 
+  }
+  header #branding h1 {
+    font-size: 1.5rem; 
+  }
+}
