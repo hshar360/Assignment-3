@@ -1,0 +1,63 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.projects-container {
+    background-color: #e0e0e0;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.header {
+    background-color: #333744;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-icon,
+.project-icon {
+    width: 100px; 
+    transition: transform 0.3s; 
+}
+
+.project {
+    padding: 20px;
+}
+
+.project p {
+    color: #333744;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+
+.project-icon:hover {
+    transform: scale(1.2); 
+}
+
+/* text and image alignment*/
+.project {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px;
+}
+
+.project p {
+    color: #333744;
+    font-size: 24px;
+    margin-left: 20px;
+
+}
+
+/*footer*/
+.footer-container {
+    background-color: #333744; 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 20px 0; 
+    margin-top: 50px; 
+}
